@@ -1,0 +1,236 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 27240566001,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Sweety.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 15775601740,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Sweety.setup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Glucose level entry",
+        "description": "",
+        "id": "sweety-automation;glucose-level-entry;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3100885516,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Sweety.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15587305737,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Home Page loads successfully",
+            "match": {
+              "location": "Sweety.Home_Page_loads_successfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 306325518,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter EmailID and password \"LoginDetails.properties\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LoginDetails.properties",
+                  "offset": 28
+                }
+              ],
+              "location": "Sweety.User_Enters_EmailID_Password(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 76673451,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on Login",
+            "match": {
+              "location": "Sweety.Validate_The_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2032312538,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Navigate to Enter Levels",
+            "match": {
+              "location": "Sweety.Navigate_To_Enter_Levels()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1247676329,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click On AddnewValue",
+            "match": {
+              "location": "Sweety.Click_on_Levels()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SweetyLevelEntry"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "View Report",
+        "description": "",
+        "id": "sweety-automation;view-report;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2065316366,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Sweety.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14000570541,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Home Page loads successfully",
+            "match": {
+              "location": "Sweety.Home_Page_loads_successfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 315992714,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Enter EmailID and password \"LoginDetails.properties\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LoginDetails.properties",
+                  "offset": 28
+                }
+              ],
+              "location": "Sweety.User_Enters_EmailID_Password(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 92605730,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click on Login",
+            "match": {
+              "location": "Sweety.Validate_The_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1693770478,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Navigate to Reports",
+            "match": {
+              "location": "Sweety.Navigate_To_Report()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3115264353,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "View Daily Report",
+            "match": {
+              "location": "Sweety.View_Daily_Report()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6143190066,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "View Monthly Reports",
+            "match": {
+              "location": "Sweety.View_Monthly_Reports()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@SweetyReport"
+          }
+        ]
+      }
+    ],
+    "name": "Sweety Automation",
+    "description": "",
+    "id": "sweety-automation",
+    "keyword": "Feature",
+    "uri": "src/test/java/Sweety.feature"
+  }
+]
