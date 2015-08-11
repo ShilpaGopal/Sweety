@@ -7,14 +7,14 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 27240566001,
+  "duration": 49505488667,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 16,
-  "name": "Glucose level entry",
+  "line": 18,
+  "name": "Glucose level entry Validation for more than 4 entries per day",
   "description": "",
-  "id": "sweety-automation;glucose-level-entry;;2",
+  "id": "sweety-automation;glucose-level-entry-validation-for-more-than-4-entries-per-day;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -49,14 +49,37 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
+  "name": "Verify 4 levels are available for the day",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
   "name": "Click On AddnewValue",
   "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "Enter the Level \"4\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "Click on Submit",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 14,
+  "name": "Verify level entered are not accepted",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "Sweety.Home_Page_loads_successfully()"
 });
 formatter.result({
-  "duration": 15587305737,
+  "duration": 15696203396,
   "status": "passed"
 });
 formatter.match({
@@ -69,40 +92,74 @@ formatter.match({
   "location": "Sweety.User_Enters_EmailID_Password(String)"
 });
 formatter.result({
-  "duration": 306325518,
+  "duration": 316973391,
   "status": "passed"
 });
 formatter.match({
   "location": "Sweety.Validate_The_Login()"
 });
 formatter.result({
-  "duration": 76673451,
+  "duration": 109256533,
   "status": "passed"
 });
 formatter.match({
   "location": "Sweety.Navigate_To_Enter_Levels()"
 });
 formatter.result({
-  "duration": 2032312538,
+  "duration": 1459426368,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Sweety.Verify_4_levels_are_available_for_the_day()"
+});
+formatter.result({
+  "duration": 462832107,
   "status": "passed"
 });
 formatter.match({
   "location": "Sweety.Click_on_Levels()"
 });
 formatter.result({
-  "duration": 1247676329,
+  "duration": 225110818,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "4",
+      "offset": 17
+    }
+  ],
+  "location": "Sweety.Enter_the_level(String)"
+});
+formatter.result({
+  "duration": 1230434059,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Sweety.Click_on_submit()"
+});
+formatter.result({
+  "duration": 3205455823,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Sweety.Verify_level_entered_are_accepted_or_not()"
+});
+formatter.result({
+  "duration": 121225824,
   "status": "passed"
 });
 formatter.after({
-  "duration": 3100885516,
+  "duration": 2348621222,
   "status": "passed"
 });
 formatter.before({
-  "duration": 15775601740,
+  "duration": 15125936261,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 30,
+  "line": 35,
   "name": "View Report",
   "description": "",
   "id": "sweety-automation;view-report;;2",
@@ -110,18 +167,18 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 18,
+      "line": 22,
       "name": "@SweetyReport"
     }
   ]
 });
 formatter.step({
-  "line": 21,
+  "line": 25,
   "name": "Home Page loads successfully",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 22,
+  "line": 26,
   "name": "Enter EmailID and password \"LoginDetails.properties\"",
   "matchedColumns": [
     0
@@ -129,30 +186,30 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 23,
+  "line": 27,
   "name": "Click on Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 24,
+  "line": 28,
   "name": "Navigate to Reports",
   "keyword": "And "
 });
 formatter.step({
-  "line": 25,
+  "line": 29,
   "name": "View Daily Report",
   "keyword": "And "
 });
 formatter.step({
-  "line": 26,
+  "line": 30,
   "name": "View Monthly Reports",
-  "keyword": "And "
+  "keyword": "Then "
 });
 formatter.match({
   "location": "Sweety.Home_Page_loads_successfully()"
 });
 formatter.result({
-  "duration": 14000570541,
+  "duration": 15695453541,
   "status": "passed"
 });
 formatter.match({
@@ -165,39 +222,39 @@ formatter.match({
   "location": "Sweety.User_Enters_EmailID_Password(String)"
 });
 formatter.result({
-  "duration": 315992714,
+  "duration": 303229082,
   "status": "passed"
 });
 formatter.match({
   "location": "Sweety.Validate_The_Login()"
 });
 formatter.result({
-  "duration": 92605730,
+  "duration": 89262233,
   "status": "passed"
 });
 formatter.match({
   "location": "Sweety.Navigate_To_Report()"
 });
 formatter.result({
-  "duration": 1693770478,
+  "duration": 1364679694,
   "status": "passed"
 });
 formatter.match({
   "location": "Sweety.View_Daily_Report()"
 });
 formatter.result({
-  "duration": 3115264353,
+  "duration": 3142509126,
   "status": "passed"
 });
 formatter.match({
   "location": "Sweety.View_Monthly_Reports()"
 });
 formatter.result({
-  "duration": 6143190066,
+  "duration": 6131869286,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2065316366,
+  "duration": 1936462234,
   "status": "passed"
 });
 });

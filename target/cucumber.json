@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 27240566001,
+              "duration": 49505488667,
               "status": "passed"
             },
             "match": {
@@ -15,7 +15,7 @@
           },
           {
             "result": {
-              "duration": 15775601740,
+              "duration": 15125936261,
               "status": "passed"
             },
             "match": {
@@ -23,14 +23,14 @@
             }
           }
         ],
-        "line": 16,
-        "name": "Glucose level entry",
+        "line": 18,
+        "name": "Glucose level entry Validation for more than 4 entries per day",
         "description": "",
-        "id": "sweety-automation;glucose-level-entry;;2",
+        "id": "sweety-automation;glucose-level-entry-validation-for-more-than-4-entries-per-day;;2",
         "after": [
           {
             "result": {
-              "duration": 3100885516,
+              "duration": 2348621222,
               "status": "passed"
             },
             "match": {
@@ -43,7 +43,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15587305737,
+              "duration": 15696203396,
               "status": "passed"
             },
             "line": 6,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 306325518,
+              "duration": 316973391,
               "status": "passed"
             },
             "line": 7,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 76673451,
+              "duration": 109256533,
               "status": "passed"
             },
             "line": 8,
@@ -88,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 2032312538,
+              "duration": 1459426368,
               "status": "passed"
             },
             "line": 9,
@@ -100,15 +100,72 @@
           },
           {
             "result": {
-              "duration": 1247676329,
+              "duration": 462832107,
               "status": "passed"
             },
             "line": 10,
+            "name": "Verify 4 levels are available for the day",
+            "match": {
+              "location": "Sweety.Verify_4_levels_are_available_for_the_day()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 225110818,
+              "status": "passed"
+            },
+            "line": 11,
             "name": "Click On AddnewValue",
             "match": {
               "location": "Sweety.Click_on_Levels()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1230434059,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Enter the Level \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 17
+                }
+              ],
+              "location": "Sweety.Enter_the_level(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3205455823,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click on Submit",
+            "match": {
+              "location": "Sweety.Click_on_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 121225824,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Verify level entered are not accepted",
+            "match": {
+              "location": "Sweety.Verify_level_entered_are_accepted_or_not()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -119,14 +176,14 @@
         ]
       },
       {
-        "line": 30,
+        "line": 35,
         "name": "View Report",
         "description": "",
         "id": "sweety-automation;view-report;;2",
         "after": [
           {
             "result": {
-              "duration": 2065316366,
+              "duration": 1936462234,
               "status": "passed"
             },
             "match": {
@@ -139,10 +196,10 @@
         "steps": [
           {
             "result": {
-              "duration": 14000570541,
+              "duration": 15695453541,
               "status": "passed"
             },
-            "line": 21,
+            "line": 25,
             "name": "Home Page loads successfully",
             "match": {
               "location": "Sweety.Home_Page_loads_successfully()"
@@ -151,10 +208,10 @@
           },
           {
             "result": {
-              "duration": 315992714,
+              "duration": 303229082,
               "status": "passed"
             },
-            "line": 22,
+            "line": 26,
             "name": "Enter EmailID and password \"LoginDetails.properties\"",
             "match": {
               "arguments": [
@@ -172,10 +229,10 @@
           },
           {
             "result": {
-              "duration": 92605730,
+              "duration": 89262233,
               "status": "passed"
             },
-            "line": 23,
+            "line": 27,
             "name": "Click on Login",
             "match": {
               "location": "Sweety.Validate_The_Login()"
@@ -184,10 +241,10 @@
           },
           {
             "result": {
-              "duration": 1693770478,
+              "duration": 1364679694,
               "status": "passed"
             },
-            "line": 24,
+            "line": 28,
             "name": "Navigate to Reports",
             "match": {
               "location": "Sweety.Navigate_To_Report()"
@@ -196,10 +253,10 @@
           },
           {
             "result": {
-              "duration": 3115264353,
+              "duration": 3142509126,
               "status": "passed"
             },
-            "line": 25,
+            "line": 29,
             "name": "View Daily Report",
             "match": {
               "location": "Sweety.View_Daily_Report()"
@@ -208,20 +265,20 @@
           },
           {
             "result": {
-              "duration": 6143190066,
+              "duration": 6131869286,
               "status": "passed"
             },
-            "line": 26,
+            "line": 30,
             "name": "View Monthly Reports",
             "match": {
               "location": "Sweety.View_Monthly_Reports()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 18,
+            "line": 22,
             "name": "@SweetyReport"
           }
         ]

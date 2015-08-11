@@ -1,0 +1,5 @@
+com\test\Sweety\Sweety.class
+com\test\Objects\LevelPageObjects.class
+com\test\Objects\ReportPageObjects.class
+com\test\Objects\LoginPageObjects.class
+com\test\Sweety\TriggerTest.class
